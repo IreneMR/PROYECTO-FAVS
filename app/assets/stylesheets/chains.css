@@ -1,3 +1,45 @@
+
+body {
+	font-family: 'Rockwell'
+}
 .row {
   padding-top: 2em;
+}
+
+#map-canvas {
+	margin-left: 270px;
+	height: 400px;
+	width: 500px;
+	background-color: grey;
+}
+
+header {
+	margin-top: 35px;
+	font-size: 40px;
+	width: 1300px;
+	margin-left: 35px;
+	padding-bottom: 50px;
+	position: absolute;
+}
+
+footer {
+	font-size: 10px;
+	text-align: center;
+}
+
+.btn-group-pull-right {
+float: right;
+z-index: 99999999999999;
+padding-bottom: 20px;
+margin-right: 35px;
+font-size: 20px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.background_image {
+	margin-top: 100px;
 }

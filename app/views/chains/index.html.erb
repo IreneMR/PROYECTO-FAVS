@@ -1,0 +1,27 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="">
+
+        <title></title>
+    </head>
+
+    <body>
+    <% @chains.each do |chain| %>
+	<%= chain.name %>
+
+	<div class="form-container">
+		<%= text_field_tag :comment, nil, id: nil, name: chain.id, class: "comment-field", :placeholder => "Put here your experience" %>
+
+		<%= text_field_tag :user, nil, id: nil, name: chain.id, class: "user-field" %>
+		<%= text_field_tag :city, nil, id: nil, name: chain.id, class: "city-field" %>
+		<button class="btn-send">Send!</button>
+	</div>
+	<%end%>
+
+    <script type="text/javascript" src=""></script>
+    </body>
+</html>

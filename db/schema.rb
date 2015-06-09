@@ -22,12 +22,12 @@ ActiveRecord::Schema.define(version: 20150602081558) do
   end
 
   create_table "userposts", force: :cascade do |t|
-    t.string   "user_name"
-    t.date     "date_userpost"
     t.integer  "chain_id"
-    t.text     "description_userpost"
-    t.datetime "created_at",           null: false
-    t.datetime "updated_at",           null: false
+    t.string   "user"
+    t.text     "comment"
+    t.string   "city"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

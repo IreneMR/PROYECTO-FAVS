@@ -2,34 +2,32 @@
 <html>
 	<head>
 	  <title>PROYECTO</title>
+	  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 	  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-	  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400;300' rel='stylesheet' type='text/css'>
+
 	  <%= stylesheet_link_tag    'application', media: 'all' %>
 	  <%= javascript_include_tag 'application' %>
 	  <%= csrf_meta_tags %>
+	  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 	</head>
 	<body>
 		<header>
-			<h1> FAVOROOTS </h1>
-<div class="container">
-  
-  <div class="row">
-    <div class="col-sm-12">
-      
-        <div class="col-sm-8">
-          
-          <div class="btn-group pull-left">
-            <button type="button" class="btn btn-default">Info</button>
-            <button type="button" class="btn btn-default"><%= link_to 'Chains', view_all_chains_path %> </button>
-            <button type="button" class="btn btn-default">Map</button>
-           </div>
-        </div>
-    </div>
-	</div>
-</div>
+			FAVOROOTS 
+			<span class="btn-group-pull-right">
+			            <%= link_to'Info' %>
+			            <%= link_to 'Chains', chains_path %>
+			            <%= link_to 'Map', map_path %>
+	 	</span>
+		</header>
+		<img class= "background_image" src="fondo.jpg">
 
-</header>
+	
 		<%= yield %>
+		<footer> 
+			<hr> Created by Irene Muñoz Real ® Ironhack 2015
 
+		</footer>
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script> 
 	</body>
 </html>

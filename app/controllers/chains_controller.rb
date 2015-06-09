@@ -4,12 +4,13 @@ class ChainsController < ApplicationController
 
 	end
 
-	def view_all_chains
-		@chains = Chain.all		
-	end
-
 	def show
 		@chain = Chain.find params[:id]
+	end
+
+	def landing
+		
+		
 	end
 
 end
