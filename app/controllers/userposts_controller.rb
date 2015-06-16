@@ -7,10 +7,10 @@ class UserpostsController < ApplicationController
 	def create	
 		comment = params[:comment]
 		user = params[:user]
-		city = params[:city]
+		address = params[:city]
 
 		chain = Chain.find(params[:chain_id])
-		chain.userposts.create comment: comment, user: user, city: city
+		chain.userposts.create comment: comment, user: user, address: address
 
 		render json: 1
 	end

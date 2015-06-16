@@ -6,20 +6,23 @@ $(document).ready(function(){
 			user:  $(this).siblings(".user-field").val(), 
 			city:   $(this).siblings(".city-field").val()
 		}
-
-		currentChain = $(this).siblings(".city-field").attr("name")
-		console.log(newPost);
+		currentChainID = $(this).attr("name")
+		//currentChain = $("#chain"+currentChainID);
+		//currentChain.after("<div>"+newPost.user+" "+newPost.comment +" "+newPost.city+"</div>" );
 
 		$.ajax({
 			type: "POST",
-			url: "http://localhost:3000/chains/"+currentChain+"/userposts",
+			url: "http://localhost:3000/chains/"+currentChainID+"/userposts",
 			data: newPost,
-			success: function(response){console.log("success: "+ response)},
-      error: function(response){console.log("error: " + response)},
-      dataType: "json"
+			success: function(response){location.reload()},
+	        error: function(response){console.log("error: " + response)},
+	        dataType: "json"
 		})
 	});
 })
+
+
+
 
 
 

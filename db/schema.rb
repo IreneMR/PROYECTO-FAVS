@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 20150602081558) do
     t.integer  "chain_id"
     t.string   "user"
     t.text     "comment"
-    t.string   "city"
+    t.string   "address"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

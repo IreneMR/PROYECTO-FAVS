@@ -4,8 +4,8 @@ class CreateUserposts < ActiveRecord::Migration
     	t.integer :chain_id
     	t.string :user
     	t.text :comment
-    	t.string :city
-
+    	t.string :address
+    	
       t.timestamps null: false
     end
   end
